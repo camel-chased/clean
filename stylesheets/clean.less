@@ -1,6 +1,7 @@
 @import "ui-variables";
 
-.clean {
+.clean2 {
+
   .left,.top,.right,.tab-bar{
     transition: left 750ms, right 750ms, top 500ms, transform 150ms, opacity 200ms;
   }
@@ -25,6 +26,7 @@
     }
     .panel-left{
       position:absolute;
+      z-index: 40;
       left: -100%;
       width: auto !important;
     }
@@ -38,6 +40,7 @@
     .panel-right{
       position:absolute;
       right:-100%;
+      z-index: 40;
     }
     border-left:10px solid @pane-item-border-color;
     &:hover > .panel-right{
@@ -45,19 +48,17 @@
     }
   }
 
-  .gutter,
-  .line-numbers,
   .status-bar{
     display: none;
   }
   .tab-bar{
+
     .tab.active{
       z-index:40;
     }
     li{
       z-index: 20;
       display: none;
-      opacity:0;
       &.active{
         border-bottom:solid 4px @base-background-color;
       }
@@ -67,7 +68,7 @@
     z-index:10;
     transform: scaleY(0.2);
     transform-origin: 0 0;
-
+    position:absolute;
     &:hover{
       //height:auto;
       transform:none;
@@ -89,17 +90,41 @@
       transition:opacity 150ms;
       opacity:0;
       &:hover{
-        opacity:1;
+        opacity:1 !important;
       }
     }
   }
-  .item-views{
-    position:static;
-  }
-}
 
- .clean-show-left{
-  .left{
-    display:block !important;
+
+  &.clean2-show-tabs{
+    .tab-bar{
+      transform:none !important;
+      position:relative;
+      li{
+        transition:opacity 150ms;
+        display:inline-block;
+      }
+
+      &:hover > li{
+        display:inline-block;
+        opacity:1 !important;
+      }
+    }
+    &.clean2-hover-tabs{
+      .tab-bar{
+        li{
+          opacity:0;
+        }
+      }
+    }
   }
+
+  &.clean2-show-gutter{
+    atom-text-editor::shadow{
+      .gutter{
+        display:block;
+      }
+    }
+  }
+
 }

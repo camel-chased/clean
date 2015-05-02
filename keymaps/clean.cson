@@ -1,3 +1,2 @@
 '.workspace':
-  'alt-cmd-d': 'clean:toggle'
-  'ctrl+alt+enter': 'clean:toggle'
+  'ctrl+alt+enter': 'clean2:toggle'

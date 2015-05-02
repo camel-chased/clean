@@ -2,9 +2,9 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Clean'
+      'label': 'Clean2'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'clean:toggle' }
+        { 'label': 'Toggle', 'command': 'clean2:toggle' }
       ]
     ]
   }
