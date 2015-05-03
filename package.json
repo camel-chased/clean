@@ -1,7 +1,7 @@
 {
   "name": "Clean2",
   "main": "./lib/clean",
-  "version": "0.13.0",
+  "version": "0.12.0",
   "description": "Distraction free writing. Based on the Zen and Clean packages.",
   "activationEvents": [
     "clean2:toggle",
@@ -22,7 +22,7 @@
   "dependencies": {},
   "readme": "#Clean2\n\n This is modified fork from Clean repo and Clean is fork of Zen package :)\n",
   "readmeFilename": "README.md",
-  "_id": "Clean2@0.11.0",
+  "_id": "Clean2@0.12.0",
   "_shasum": "fa5e2d51e3e0e1c44b44ee52199a22ae264eb67c",
   "_resolved": "file:../d-115330-7137-r1k3sk/package.tgz",
   "_from": "../d-115330-7137-r1k3sk/package.tgz"
