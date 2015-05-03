@@ -1,7 +1,7 @@
 {
   "name": "Clean2",
   "main": "./lib/clean",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "description": "Distraction free writing. Based on the Zen and Clean packages.",
   "activationEvents": [
     "clean2:toggle",
