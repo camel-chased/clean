@@ -19,7 +19,7 @@ atom-workspace{
     border:none;
   }
 
-  .editor:not(.mini) {
+  atom-text-editor:not(.mini) {
     padding: 20px 0 0 20%;
   }
 
@@ -31,26 +31,26 @@ atom-workspace{
     .tree-view{
       padding-right:20px;
     }
-    .panel-left{
+    atom-panel.left{
       position:absolute;
       z-index: 40;
       left: -100%;
       width: auto !important;
     }
     border-right:10px solid @pane-item-border-color;
-    &:hover > .panel-left{
+    &:hover > atom-panel.left{
       left:0px;
     }
   }
 
   .right{
-    .panel-right{
+    atom-panel.right{
       position:absolute;
       right:-100%;
       z-index: 40;
     }
     border-left:10px solid @pane-item-border-color;
-    &:hover > .panel-right{
+    &:hover > atom-panel.right{
       right:0px;
     }
   }
