@@ -1,7 +1,7 @@
 {
   "name": "Clean2",
   "main": "./lib/clean",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Distraction free writing. Based on the Zen and Clean packages.",
   "activationCommands": {
     "atom-workspace": [
