@@ -1,0 +1,2 @@
+'atom-workspace':
+  'ctrl-alt-enter': 'clean2:toggle'

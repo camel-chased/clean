@@ -1,0 +1,137 @@
+@import "ui-variables";
+
+atom-workspace{
+  &.clean2{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.clean2 {
+
+  .left,.top,.right,.tab-bar{
+    transition: left 750ms, right 750ms, top 500ms, transform 150ms, opacity 200ms;
+  }
+
+  atom-pane,atom-panel:not(.modal), atom-pane > div,atom-panel:not(.modal) > div{
+    padding:0px !important;
+    margin:0px !important;
+    border:none;
+  }
+
+  atom-text-editor:not(.mini) {
+    padding: 20px 0 0 20%;
+  }
+
+  .left{
+    .tree-view-resizer{
+      width: auto !important;
+      float: left;
+    }
+    .tree-view{
+      padding-right:20px;
+    }
+    atom-panel.left{
+      position:absolute;
+      z-index: 40;
+      left: -100%;
+      width: auto !important;
+    }
+    border-right:10px solid @pane-item-border-color;
+    &:hover > atom-panel.left{
+      left:0px;
+    }
+  }
+
+  .right{
+    atom-panel.right{
+      position:absolute;
+      right:-100%;
+      z-index: 40;
+    }
+    border-left:10px solid @pane-item-border-color;
+    &:hover > atom-panel.right{
+      right:0px;
+    }
+  }
+
+  .status-bar{
+    display: none;
+  }
+  .tab-bar{
+
+    .tab.active{
+      z-index:40;
+    }
+    li{
+      z-index: 20;
+      display: none;
+      &.active{
+        border-bottom:solid 4px @base-background-color;
+      }
+    }
+    //height: 10px;
+    width:100%;
+    z-index:10;
+    transform: scaleY(0.2);
+    transform-origin: 0 0;
+    position:absolute;
+    &:hover{
+      //height:auto;
+      transform:none;
+      li{
+        display:inline-block;
+        opacity:1;
+      }
+
+    }
+  }
+  atom-text-editor::shadow{
+    .gutter{
+      display:none;
+    }
+    .vertical-scrollbar{
+      display:none;
+    }
+    atom-text-editor-minimap{
+      transition:opacity 150ms;
+      opacity:0;
+      &:hover{
+        opacity:1 !important;
+      }
+    }
+  }
+
+
+  &.clean2-show-tabs{
+    .tab-bar{
+      transform:none !important;
+      position:relative;
+      li{
+        transition:opacity 150ms;
+        display:inline-block;
+      }
+
+      &:hover > li{
+        display:inline-block;
+        opacity:1 !important;
+      }
+    }
+    &.clean2-hover-tabs{
+      .tab-bar{
+        li{
+          opacity:0;
+        }
+      }
+    }
+  }
+
+  &.clean2-show-gutter{
+    atom-text-editor::shadow{
+      .gutter{
+        display:block;
+      }
+    }
+  }
+
+}

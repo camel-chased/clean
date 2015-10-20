@@ -1,0 +1,11 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Clean2'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'clean2:toggle' }
+      ]
+    ]
+  }
+]

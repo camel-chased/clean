@@ -1,0 +1,44 @@
+{
+  "name": "Clean2",
+  "main": "./lib/clean",
+  "version": "0.14.0",
+  "description": "Distraction free writing. Based on the Zen and Clean packages.",
+  "activationCommands": {
+    "atom-workspace": [
+      "clean2:toggle",
+      "clean2:activate"
+    ]
+  },
+  "homepage": "https://github.com/camel-chased/clean2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camel-chased/clean2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camel-chased/clean2/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "readme": "#Clean2\n\n This is modified fork from Clean repo and Clean is fork of Zen package :)\n",
+  "readmeFilename": "README.md",
+  "_id": "Clean2@0.14.0",
+  "_shasum": "fa5e2d51e3e0e1c44b44ee52199a22ae264eb67c",
+  "_resolved": "file:..\\d-115920-4224-cxsjra\\package.tgz",
+  "_from": "..\\d-115920-4224-cxsjra\\package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib\\clean.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
