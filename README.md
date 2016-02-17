@@ -12,10 +12,6 @@ Additional Options:
 * Hidden line numbers
 * If you use minimap plugin you can adjust initial opacity
 
-<<<<<<< HEAD
-hotkey: ctrl+alt+enter
-=======
 hotkey: ctrl+alt+enter or alt+cmd+d
->>>>>>> c3052ea962587f00354ce6e619df4de880e75d79
 
 ![clean2](http://download.menedzer.net.pl/clean.gif)
