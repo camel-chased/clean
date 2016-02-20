@@ -14,4 +14,3 @@ Additional Options:
 
 hotkey: ctrl+alt+enter or alt+cmd+d
 
-![clean2](http://download.menedzer.net.pl/clean.gif)
